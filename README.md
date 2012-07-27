@@ -12,8 +12,8 @@ environment and extract it to the org.eclipse.swt folder
 The folder should look something like this.
 
 - org.eclipse.swt
--- about_files
--- about.html
--- src.zip
--- swt-debug.jar
--- swt.jar
+ - about_files
+ - about.html
+ - src.zip
+ - swt-debug.jar
+ - swt.jar
