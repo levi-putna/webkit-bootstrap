@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)http://stackoverflow.com/questions/ask -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    
+    
+    <title>Ask a Question - Stack Overflow</title>
+    <link rel="shortcut icon" href="http://cdn.sstatic.net/stackoverflow/img/favicon.ico">
+    <link rel="apple-touch-icon" href="http://cdn.sstatic.net/stackoverflow/img/apple-touch-icon.png">
+    <link rel="search" type="application/opensearchdescription+xml" title="Stack Overflow" href="http://stackoverflow.com/opensearch.xml">
+
+    
+    <script type="text/javascript" async="" src="./Ask a Question - Stack Overflow_files/ga.js"></script><script type="text/javascript" async="" src="./Ask a Question - Stack Overflow_files/quant.js"></script><script type="text/javascript" src="./Ask a Question - Stack Overflow_files/jquery.min.js"></script>
+    <script type="text/javascript" src="./Ask a Question - Stack Overflow_files/stub.js"></script>
+    <link rel="stylesheet" type="text/css" href="./Ask a Question - Stack Overflow_files/all.css">
+    
+    <script type="text/javascript">
+        StackExchange.ready(
+            function () {
+                StackExchange.question.initTitleSearch($('#title'), $("#question-suggestions"), 'Stack Overflow');
+
+                    
+                    var $answerCheckbox = $('#answer-from-ask');
+                    var editorInitialized = false;
+
+                    function showAnswerSection(quick, callback) {
+                        if (!editorInitialized) {
+                            $("#question-answer-section").css("opacity", 0).removeClass("dno");
+                            StackExchange.editor.finallyInit();
+                            editorInitialized = true;
+                        }
+                        
+                        $('#question-answer-section, #answer-from-ask-form-item').fadeTo(quick ? 0 : 400, 1, callback);
+                    }
+
+                    $answerCheckbox.change(function () {
+                        if ($(this).is(':checked')) {
+                            $('#question-only-section, #answer-from-ask-form-item').fadeOut(function () {
+                                showAnswerSection(false, function () {
+                                    $('#wmd-input-42').focus();
+                                });
+                            });
+                        }
+                        else {
+                            $('#question-answer-section, #answer-from-ask-form-item').fadeOut(function () {
+                                $('#question-only-section, #answer-from-ask-form-item').fadeIn();
+                            });
+                        }
+                    });
+
+                    if ($answerCheckbox.is(':checked') || 0 > 0) {
+                        $answerCheckbox.attr('checked', true);
+                        $('#question-only-section').hide();
+                        StackExchange.using("editor", function () {
+                            setTimeout(function () { showAnswerSection(true) }, 2);
+                        });
+                    }
+                    
+            }
+        );
+    </script>
+
+
+        <script type="text/javascript">
+             StackExchange.ready(function () {
+                 StackExchange.realtime.init('ws://sockets.ny.stackexchange.com');
+                StackExchange.realtime.subscribeToInboxNotifications();
+                StackExchange.realtime.subscribeToReputationNotifications('1');            
+        });
+        </script>
+
+        <script type="text/javascript">
+        StackExchange.init({"stackAuthUrl":"https://stackauth.com","serverTime":1342951890,"styleCode":true,"enableUserHovercards":true,"site":{"name":"Stack Overflow","description":"Q&A for professional and enthusiast programmers","isNoticesTabEnabled":true,"newTitleSearchBoxEnabled":false},"user":{"isRegistered":true,"userId":1156064,"accountId":1181163,"gravatar":"\u003cdiv class=\"\"\u003e\u003cimg src=\"http://www.gravatar.com/avatar/bbdf106aaa55d8a7f0e78c99c3c60da3?s=32&amp;d=identicon&amp;r=PG\" alt=\"\" width=\"32\" height=\"32\"\u003e\u003c/div\u003e","profileUrl":"http://stackoverflow.com/users/1156064/levi-putna","fkey":"109bbba0fcbd76ad2669dac900e15b3c","notificationsUnviewedCount":0,"inboxUnviewedCount":0}});
+        StackExchange.using.setCacheBreakers({"js/prettify-full.js":"d1cd9a23171c","js/moderator.js":"8c49fc268737","js/full-anon.js":"1d43ed718c49","js/full.js":"6328e7ccbc9d","js/wmd.js":"93b92575f8bc","js/third-party/jquery.autocomplete.min.js":"e5f01e97f7c3","js/mobile.js":"6eb68240242f","js/help.js":"fc9fb0517db2","js/tageditor.js":"c1ba807b32aa","js/tageditornew.js":"bd66fabe1c71","js/inline-tag-editing.js":"be882e188985","js/revisions.js":"8c6bcd93b7fe","js/suggested-edits.js":"46c4696efca5","js/probes.js":"beb933322ff0"});
+        
+    </script>
+
+<script async="" type="text/javascript" src="./Ask a Question - Stack Overflow_files/full.js"></script><script async="" type="text/javascript" src="./Ask a Question - Stack Overflow_files/tageditornew.js"></script><script async="" type="text/javascript" src="./Ask a Question - Stack Overflow_files/wmd.js"></script><style type="text/css"></style></head>
+<body class="ask-page">
+    <noscript>&lt;div id="noscript-padding"&gt;&lt;/div&gt;</noscript>
+    <div id="notify-container"></div>
+    <div id="overlay-header"></div>
+    <div id="custom-header"></div>
+
+    <div class="container">
+        <div id="header">
+            <div id="portalLink">
+                <a class="genu" onclick="StackExchange.ready(function(){genuwine.click();});return false;">Stack Exchange</a>
+            </div>
+            <div id="topbar">
+                <div id="hlinks">
+                    <span id="hlinks-user">
+                  <span class="profile-triangle">▾</span><a href="http://stackoverflow.com/users/1156064/levi-putna" class="profile-link">Levi Putna</a>&nbsp;<a href="http://stackoverflow.com/users/1156064/levi-putna?tab=reputation"><span class="reputation-score" title="your reputation; view reputation changes" dir="ltr">341</span></a><span title="8 bronze badges"><span class="badge3"></span><span class="badgecount">8</span></span>
+ <span class="lsep">|</span>
+
+                  </span>
+                  <span id="hlinks-nav">
+                  <a href="http://stackoverflow.com/review/">review</a>
+ <span class="lsep">|</span>
+
+                  </span>
+                  <span id="hlinks-custom">
+                  <a href="http://chat.stackoverflow.com/">chat</a>
+ <span class="lsep">|</span>
+<a href="http://meta.stackoverflow.com/">meta</a>
+ <span class="lsep">|</span>
+<a href="http://stackoverflow.com/about">about</a>
+ <span class="lsep">|</span>
+<a href="http://stackoverflow.com/faq">faq</a>
+                  </span>
+                </div>
+                <div id="hsearch">
+                    <form id="search" action="http://stackoverflow.com/search" method="get" autocomplete="off">
+                    <div>
+                        <input autocomplete="off" name="q" class="textbox" placeholder="search" tabindex="1" type="text" maxlength="140" size="28" value="">
+                    </div>
+                    </form>
+                </div>
+            </div>
+            <br class="cbt">
+            <div id="hlogo">
+                <a href="http://stackoverflow.com/">Stack Overflow</a>
+            </div>
+            <div id="hmenus">
+                <div class="nav mainnavs">
+                    <ul>
+                        <li><a id="nav-questions" href="http://stackoverflow.com/questions">Questions</a></li>
+                        <li><a id="nav-tags" href="http://stackoverflow.com/tags">Tags</a></li>
+                        <li><a id="nav-users" href="http://stackoverflow.com/users">Users</a></li>
+                        <li><a id="nav-badges" href="http://stackoverflow.com/badges">Badges</a></li>
+                        <li><a id="nav-unanswered" href="http://stackoverflow.com/unanswered">Unanswered</a></li>
+                    </ul>
+                </div>
+                <div class="nav askquestion">
+                    <ul>
+                        <li class="youarehere">
+                            <a id="nav-askquestion" style="cursor:default">Ask Question</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        
+
+
+        <div id="content">
+            
+            
+
+
+
+<div id="mainbar" class="ask-mainbar">
+
+    <form id="post-form" class="post-form" action="http://stackoverflow.com/questions/ask/submit" method="post">
+        <div class="form-item ask-title">
+            <table class="ask-title-table">
+                <tbody><tr>
+                    <td class="ask-title-cell-key">
+                        <label for="title">Title</label>
+                    </td>
+                    <td class="ask-title-cell-value">
+                        <input type="text" maxlength="300" tabindex="100" class="actual-edit-overlay" value="" autocomplete="off" style="opacity: 1; position: absolute; background-color: white; color: black; -webkit-text-fill-color: black; width: 610px; height: 15px; line-height: normal; font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; font-size: 13px; text-align: -webkit-auto; border: 1px solid rgb(153, 153, 153); " disabled="disabled"><input id="title" name="title" type="text" maxlength="300" tabindex="100" class="ask-title-field edit-field-overlayed" value="" autocomplete="off" style="opacity: 0.4; z-index: 1; position: relative; ">                        
+                        <span class="edit-field-overlay">what's your programming question? be specific.</span>
+                    </td>
+                </tr>
+            </tbody></table>
+            <div id="question-suggestions">
+            </div>
+        </div>
+
+
+        
+
+
+<script type="text/javascript">
+    StackExchange.ready(function() {
+        StackExchange.using("tagEditor", function () { StackExchange.tagEditor.ready.done(initFadingHelpText); });
+        initTagRenderer("".split(" "), "".split(" "));
+         
+        prepareEditor({
+            heartbeatType: 'ask',
+            bindNavPrevention: true,
+            postfix: "",
+            onDemand: false,
+            discardSelector: ".discard-question"
+            
+        });
+        
+    });  
+</script>
+
+
+<div id="post-editor" class="post-editor">  
+
+    
+    <div class="wmd-container">
+        <div id="wmd-button-bar" class="wmd-button-bar"><ul id="wmd-button-row" class="wmd-button-row"><li class="wmd-button" style="left: 0px; " id="wmd-bold-button" title="Strong &lt;strong&gt; Ctrl+B"><span style="background-position: 0px 0px; "></span></li><li class="wmd-button" style="left: 25px; " id="wmd-italic-button" title="Emphasis &lt;em&gt; Ctrl+I"><span style="background-position: -20px 0px; "></span></li><li class="wmd-spacer wmd-spacer1" id="wmd-spacer1"></li><li class="wmd-button" style="left: 75px; " id="wmd-link-button" title="Hyperlink &lt;a&gt; Ctrl+L"><span style="background-position: -40px 0px; "></span></li><li class="wmd-button" style="left: 100px; " id="wmd-quote-button" title="Blockquote &lt;blockquote&gt; Ctrl+Q"><span style="background-position: -60px 0px; "></span></li><li class="wmd-button" style="left: 125px; " id="wmd-code-button" title="Code Sample &lt;pre&gt;&lt;code&gt; Ctrl+K"><span style="background-position: -80px 0px; "></span></li><li class="wmd-button" style="left: 150px; " id="wmd-image-button" title="Image &lt;img&gt; Ctrl+G"><span style="background-position: -100px 0px; "></span></li><li class="wmd-spacer wmd-spacer2" id="wmd-spacer2"></li><li class="wmd-button" style="left: 200px; " id="wmd-olist-button" title="Numbered List &lt;ol&gt; Ctrl+O"><span style="background-position: -120px 0px; "></span></li><li class="wmd-button" style="left: 225px; " id="wmd-ulist-button" title="Bulleted List &lt;ul&gt; Ctrl+U"><span style="background-position: -140px 0px; "></span></li><li class="wmd-button" style="left: 250px; " id="wmd-heading-button" title="Heading &lt;h1&gt;/&lt;h2&gt; Ctrl+H"><span style="background-position: -160px 0px; "></span></li><li class="wmd-button" style="left: 275px; " id="wmd-hr-button" title="Horizontal Rule &lt;hr&gt; Ctrl+R"><span style="background-position: -180px 0px; "></span></li><li class="wmd-spacer wmd-spacer3" id="wmd-spacer3"></li><li class="wmd-button" style="left: 325px; " id="wmd-undo-button" title="Undo - Ctrl+Z"><span style="background-position: -200px 0px; "></span></li><li class="wmd-button" style="left: 350px; " id="wmd-redo-button" title="Redo - Ctrl+Shift+Z"><span style="background-position: -220px -20px; "></span></li><li class="wmd-button wmd-help-button" id="wmd-help-button" style="right: 0px; " title="Markdown Editing Help"><span style="background-position: -240px 0px; "></span></li></ul></div>
+        <textarea id="wmd-input" class="wmd-input processed" name="post-text" cols="92" rows="15" tabindex="101"></textarea>
+    <div class="grippie" style="margin-right: 0px; "></div></div>
+
+    <div class="fl" style="margin-top: 8px; height:24px;">&nbsp;</div>
+    <div id="draft-saved" class="draft-saved community-option fl" style="margin-top: 8px; height: 24px; display: none; ">draft saved</div>
+
+    <div id="draft-discarded" class="draft-discarded community-option fl" style="margin-top: 8px; height: 24px; display: none; ">draft discarded</div>
+
+
+
+    <div id="wmd-preview" class="wmd-preview"><p>So I have made a plugin something like this;</p>
+
+<pre><code>(function($) {
+
+$.table = function(el, options) {
+    // To avoid scope issues, use 'base' instead of 'this'
+    // to reference this class from internal events and functions.
+    var base = this;
+
+    // Access to jQuery and DOM versions of element
+    base.$el = $(el);
+    base.el = el;
+
+    base.load = function() {
+        alert("loading...");
+    };
+
+    base.load();
+};
+</code></pre></div>
+    <div></div>
+    <div class="edit-block">
+        <input id="fkey" name="fkey" type="hidden" value="109bbba0fcbd76ad2669dac900e15b3c">
+        <input id="author" name="author" type="text">
+    <input type="hidden" name="i1l" value="QMfS8Tr+bb6+u6SrGujEpM7SWksNVZtP68wEvvC5ayo="></div>
+</div>
+        
+<script type="text/javascript">
+    StackExchange.using("tagEditor", function () {
+        initTagRenderer("".split(" "), "".split(" "));
+        var tagInput = $("#tagnames");
+        StackExchange.tagEditor(tagInput);
+    });
+</script>	
+<div class="form-item">
+    <label>Tags</label>
+    <input id="tagnames" name="tagnames" type="text" size="60" value="" tabindex="103" style="display: none; "><div class="actual-edit-overlay" style="width: 666px; height: 28px; opacity: 1; position: absolute; background-color: white; color: black; -webkit-text-fill-color: black; line-height: 28px; font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; font-size: 13px; text-align: -webkit-auto; border: 1px solid rgb(153, 153, 153); " disabled="disabled">&nbsp;at least one tag such as (xml ruby c#), max 5 tags</div><div class="tag-editor edit-field-overlayed" style="width: 666px; height: 28px; opacity: 0.4; z-index: 1; position: relative; "><span style=""></span><input type="text" tabindex="103" style="width: 658px; "><span></span></div>
+
+
+<span class="edit-field-overlay">at least one tag such as (xml ruby c#), max 5 tags</span>
+    
+</div>
+        
+        
+        
+        <div id="question-only-section">
+
+<div>
+    <h2 class="bottom-notice">
+        Would you like to have responses to your questions <a id="inbox-notify-1" href="http://stackoverflow.com/questions/ask#">sent to you via email</a>?
+    </h2>
+</div>
+<script type="text/javascript">
+    StackExchange.ready(function () {
+        $("#inbox-notify-1").click(function () {
+            $('html, body').animate({ scrollTop: 0 }, 200);
+            StackExchange.ready(function () {
+                genuwine.click();
+                $("#seTabEmail").click();
+            });
+            return false;
+        });
+    });
+</script>
+
+            <div class="form-submit cbt">
+                <input id="submit-button" type="submit" value="Post Your Question" tabindex="120">
+                <a href="http://stackoverflow.com/questions/ask#" class="discard-question" style="">discard</a>
+            </div>
+        </div>
+
+            <div id="answer-from-ask-form-item" class="form-item">
+                <input type="checkbox" id="answer-from-ask" name="answer-from-ask"> <label for="answer-from-ask" style="display: inline;">Answer your own question</label> – <a href="http://blog.stackoverflow.com/2011/07/its-ok-to-ask-and-answer-your-own-questions/" target="_blank">share your knowledge, Q&amp;A-style</a>
+            </div>
+            <div id="question-answer-section" class="dno">
+                <div id="inline-answer" style="margin-bottom: 20px;">
+                    
+
+
+<script type="text/javascript">
+    StackExchange.ready(function() {
+        StackExchange.using("tagEditor", function () { StackExchange.tagEditor.ready.done(initFadingHelpText); });
+        initTagRenderer("".split(" "), "".split(" "));
+         
+        prepareEditor({
+            heartbeatType: '',
+            bindNavPrevention: true,
+            postfix: "-42",
+            onDemand: false,
+            discardSelector: ".discard-question"
+            
+        });
+        
+    });  
+</script>
+
+
+<div id="post-editor-42" class="post-editor">  
+
+    
+    <div class="wmd-container">
+        <div id="wmd-button-bar-42" class="wmd-button-bar"></div>
+        <textarea id="wmd-input-42" class="wmd-input" name="post-text-answer" cols="92" rows="15" tabindex="103"></textarea>
+    </div>
+
+    <div class="fl" style="margin-top: 8px; height:24px;">&nbsp;</div>
+    <div id="draft-saved-42" class="draft-saved community-option fl" style="margin-top: 8px; height:24px; display:none;">draft saved</div>
+
+    <div id="draft-discarded-42" class="draft-discarded community-option fl" style="margin-top: 8px; height:24px; display:none;">draft discarded</div>
+
+    <div class="community-option">
+        <input id="communitymode-42" name="communitymode" type="checkbox">
+        <label for="communitymode-42" title="Marking an answer community wiki encourages others to edit it by lowering the reputation barrier required to edit. However, you will not gain any upvote reputation from it. This cannot be undone.">community wiki</label>
+    </div>
+
+
+    <div id="wmd-preview-42" class="wmd-preview"></div>
+    <div></div>
+</div>
+                </div>
+
+
+<div>
+    <h2 class="bottom-notice">
+        Would you like to have responses to your questions <a id="inbox-notify-2" href="http://stackoverflow.com/questions/ask#">sent to you via email</a>?
+    </h2>
+</div>
+<script type="text/javascript">
+    StackExchange.ready(function () {
+        $("#inbox-notify-2").click(function () {
+            $('html, body').animate({ scrollTop: 0 }, 200);
+            StackExchange.ready(function () {
+                genuwine.click();
+                $("#seTabEmail").click();
+            });
+            return false;
+        });
+    });
+</script>
+
+                <div class="form-submit cbt">
+                    <input id="submit-button-42" type="submit" value="Post Your Question And Answer" tabindex="120">
+                    <a href="http://stackoverflow.com/questions/ask#" class="discard-question" style="">discard</a>
+                </div>
+            </div>
+    </form>
+</div>
+<div id="sidebar" class="ask-sidebar">
+    <div id="scroller-anchor"></div>
+    <div id="scroller" style="position: relative; ">
+        <div class="module newuser sidebar-help" id="how-to-title" style="display: none; ">
+            <h4>How to Ask</h4>
+            <p><b>Is your question about programming?</b></p><p>We prefer questions that can be <i>answered</i>, not just discussed.</p><p>Provide details. Share your research.</p><p>If your question is about this website, <b><a href="http://meta.stackoverflow.com/">ask it on meta</a></b> instead.</p><p class="ar"><a href="http://stackoverflow.com/faq">read the faq »</a><br><a href="http://stackoverflow.com/questions/how-to-ask">asking help »</a></p>
+        </div>
+        
+<div class="module newuser sidebar-help" id="how-to-format" style="display: block; "><h4>Similar Questions</h4><ul><li><a href="http://stackoverflow.com/questions/2008778/longtail-player-anythingslider-event-listeners" title="I&#39;ve implemented the AnythingSlider (http://css-tricks.com/anythingslider-jquery-plugin/) using image and video content (videos use the longtail flv player - licensed version 5). 
+
+Problem: When the ...">longtail player + anythingslider + event listeners</a></li><li><a href="http://stackoverflow.com/questions/8891906/rock-solid-jquery-plugin-template" title="I got rejected from CodeCanyon just a few minutes ago and I&#39;m kinda disappointed, because I used this template from CSS-Tricks:
+
+http://css-tricks.com/snippets/jquery/jquery-plugin-template/
+
+I&#39;m not ...">Rock-solid jQuery plugin template?</a></li><li><a href="http://stackoverflow.com/questions/1707442/how-to-stop-sliding-if-only-one-li-using-anythingsliderjquery-plugin" title="I&#39;m currently using the anythingSlider plugin, it works totally fine except when there is only one &lt;li&gt;. 
+
+The &lt;li&gt;s are generated from the database so sometimes there&#39;s only one. 
+
+...">How to stop sliding if only one &lt;li&gt; using anythingSlider(jQuery plugin)?</a></li><li><a href="http://stackoverflow.com/questions/6989405/jquery-in-field-labels-with-ajax" title="I&#39;ve got a problem with jQuery&#39;s In-Field Labels plugin.  Right now, it is working completely perfectly on my page.  It is a super awesome plugin that does a really good job.
+
+But I need to hack it a ...">jQuery In-Field Labels with AJAX</a></li><li><a href="http://stackoverflow.com/questions/8535072/obscure-jquery-syntax-in-supersized-slider" title="I was going through the supersized.3.2.5.js file of the full screen image slider - supersized. 
+
+I can&#39;t understand the syntax of the following lines. Though I am not pasting the complete code here ...">obscure jquery syntax in supersized slider</a></li><li><a href="http://stackoverflow.com/questions/5865792/jquery-pass-plugin-a-string-reference-to-be-used-as-object-in-plugin" title="This may be a little non-standard.....
+
+// JavaScript Document
+(function( $ ){
+$.fn.editAsPage = function(options) {       
+    var settings =  {};     
+    if(options){ jQuery.extend(settings, ...">jQuery: Pass plugin a string reference to be used as object in plugin</a></li><li><a href="http://stackoverflow.com/questions/9525981/is-there-a-better-way-pattern-to-write-this-jquery-plugin" title="I have a search plugin that is decently complex: it has different versions of UI and functionality as well as a bunch in interdependent domElements. Multiple instances of the plugin will exist on a ...">Is there a better way/pattern to write this jQuery plugin?</a></li><li><a href="http://stackoverflow.com/questions/4467615/does-my-jquery-plugin-have-a-weakness-pattern-wise" title="I found a plugin pattern on Internet. ( I will submit the link as soon as I find it back ) and I modified it a bit to create my own dialog plugin. I&#39;m afraid even if the code is working, the way I ...">Does my jQuery plugin have a weakness (pattern-wise)?</a></li><li><a href="http://stackoverflow.com/questions/7741293/avoiding-var-this-this-when-writing-jquery-event-handlers" title="Not a very important question, but here we go..
+
+How do you avoid using var _this = this in jQuery event handlers?
+i.e. I don&#39;t like doing:
+
+var _this = this;
+$(el).click(function (event) {
+  //use ...">Avoiding var _this = this; when writing jQuery event handlers</a></li><li><a href="http://stackoverflow.com/questions/2957327/the-best-way-to-write-a-jquery-plugin-if-there-is-such-a-way" title="There are quite a few ways to write plugins i.e. here&#39;s a nice example and what I&#39;ve seen quite a lot of lately is the following code pattern and it&#39;s used by Doug Neiner here;
+
+(function($){
+   ...">The best way to write a jQuery plugin - If there is such a way?</a></li><li><a href="http://stackoverflow.com/questions/7545604/making-jquery-extension-fn-extension" title="I&#39;m writing a plugin that will display a little helper when called for. It&#39;s supposed to be initiated like this:
+
+$(el).santasLittleHelper([options])
+
+
+The plugin then have some &quot;events&quot; just like the ...">Making JQuery extension $.fn.extension</a></li><li><a href="http://stackoverflow.com/questions/11512436/kinect-x-and-y-hands-to-jquery-via-syhon-osp5-maven-and-javaskrip-i-have-prob" title="Kinect X and Y Hands to jQuery via Syhon, OSP5, Maven and Javaskrip. I have problems with the .js
+
+i have a really simple problem...but I can´t see anymore.
+
+what I what:
+
+Kinect Handy X and Y (I ...">Kinect X and Y Hands to jQuery via Syhon, OSP5, Maven and Javaskrip. I have problems with the .js [closed]</a></li><li><a href="http://stackoverflow.com/questions/4306989/how-to-add-custom-events-dynamically-with-jquery" title="I am creating a system where content is loaded dynamically from a json file. The json file describes the content which is created by jQuery. I am trying to add events dynamically. It is working, but ...">How to add custom events dynamically with jQuery?</a></li></ul></div>
+        <div class="module newuser sidebar-help" id="how-to-tag" style="display: none; ">
+    <h4>How to Tag</h4>
+    <p>A tag is a keyword or label that categorizes your question with other, similar questions.</p>
+    <p><span class="dingus">►</span> favor existing popular tags; avoid creating new tags</p>
+    <p><span class="dingus">►</span> use common abbreviations</p>
+    <p><span class="dingus">►</span> don't include synonyms</p>
+    <p><span class="dingus">►</span> combine multiple words into single-words with dashes</p>
+    <p><span class="dingus">►</span> maximum of 5 tags, 25 chars per tag</p>
+    <p><span class="dingus">►</span> tag characters: [a-z 0-9 + # - .]</p>
+    <p><span class="dingus">►</span> delimit tags by space, semicolon, or comma</p>
+    <p class="ar"><a href="http://stackoverflow.com/tags">popular tags »</a></p>
+</div>    
+    </div>
+    <script type="text/javascript">
+        StackExchange.ready(function () { moveScroller(); });
+        StackExchange.using("editor", function () {
+                        
+            var lengthCheckInterval = setInterval(function () {
+                if ($("#wmd-input").val().length >= 220) {
+                    clearInterval(lengthCheckInterval);
+                    StackExchange.cardiologist.beatASAP();
+                }
+            }, 3000);
+        });
+        
+
+    </script>
+        
+</div>
+
+<br class="cbt">
+<div style="display:none" id="prettify-lang"></div>
+
+        </div>
+    </div>
+    <div id="footer">
+        <div class="footerwrap">
+            <div id="footer-menu">
+                <a href="http://stackoverflow.com/about">about</a> |
+                <a href="http://stackoverflow.com/faq">faq</a> |
+                <a href="http://blog.stackexchange.com/?blb=1">blog</a> |
+                    <a href="http://chat.stackoverflow.com/">chat</a> |
+                <a href="http://data.stackexchange.com/">data</a> |
+                <a href="http://shop.stackexchange.com/">shop</a> |
+                <a href="http://stackexchange.com/legal">legal</a> |
+                <a href="http://stackexchange.com/legal/privacy-policy">privacy policy</a> |
+                <a href="http://engine.adzerk.net/redirect/0/2776/2751/0/4de3c60f719c4dfcb1a57531c7050090/0">advertising info</a> |
+                <a onclick="StackExchange.switchMobile(&#39;on&#39;, &#39;/questions/ask&#39;)">mobile</a> |
+
+                <b><a href="http://stackoverflow.com/help">contact us</a></b>
+                  | <b><a href="http://meta.stackoverflow.com/">feedback</a></b>
+                <div id="footer-sites">
+                    
+                        <span style="color:#FE7A15;font-size:140%">■</span>&nbsp;<a href="http://stackoverflow.com/">stackoverflow.com</a>&nbsp; 
+                        <span style="color:#FE7A15;font-size:140%">■</span>&nbsp;<a href="http://stackapps.com/">api/apps</a>&nbsp; 
+                        <span style="color:#FE7A15;font-size:140%">■</span>&nbsp;<a href="http://careers.stackoverflow.com/">careers</a>&nbsp; 
+                        <span style="color:#E8272C;font-size:140%">■</span>&nbsp;<a href="http://serverfault.com/">serverfault.com</a>&nbsp; 
+                        <span style="color:#00AFEF;font-size:140%">■</span>&nbsp;<a href="http://superuser.com/">superuser.com</a>&nbsp; 
+                        <span style="color:#969696;font-size:140%">■</span>&nbsp;<a href="http://meta.stackoverflow.com/">meta</a>&nbsp; 
+                        <span style="color:#46937D;font-size:140%">■</span>&nbsp;<a href="http://area51.stackexchange.com/">area&nbsp;51</a>&nbsp; 
+                        <span style="color:#C0D0DC;font-size:140%">■</span>&nbsp;<a href="http://webapps.stackexchange.com/">webapps</a>&nbsp; 
+                        <span style="color:#000000;font-size:140%">■</span>&nbsp;<a href="http://gaming.stackexchange.com/">gaming</a>&nbsp; 
+                        <span style="color:#dd4814;font-size:140%">■</span>&nbsp;<a href="http://askubuntu.com/">ubuntu</a>&nbsp; 
+                        <span style="color:#9ce4fe;font-size:140%">■</span>&nbsp;<a href="http://webmasters.stackexchange.com/">webmasters</a>&nbsp; 
+                        <span style="color:#cf4d3f;font-size:140%">■</span>&nbsp;<a href="http://cooking.stackexchange.com/">cooking</a>&nbsp; 
+                        <span style="color:#f4f28d;font-size:140%">■</span>&nbsp;<a href="http://gamedev.stackexchange.com/">game development</a>&nbsp; 
+                        <span style="color:#0f3559;font-size:140%">■</span>&nbsp;<a href="http://math.stackexchange.com/">math</a>&nbsp; 
+                        <span style="color:#f2f2f2;font-size:140%">■</span>&nbsp;<a href="http://photo.stackexchange.com/">photography</a>&nbsp; 
+                        <span style="color:#037187;font-size:140%">■</span>&nbsp;<a href="http://stats.stackexchange.com/">stats</a>&nbsp; 
+                        <span style="color:#f1e7cc;font-size:140%">■</span>&nbsp;<a href="http://tex.stackexchange.com/">tex</a>&nbsp; 
+                        <span style="color:#e1cdae;font-size:140%">■</span>&nbsp;<a href="http://english.stackexchange.com/">english</a>&nbsp; 
+                        <span style="color:#a2d9f6;font-size:140%">■</span>&nbsp;<a href="http://cstheory.stackexchange.com/">theoretical cs</a>&nbsp; 
+                        <span style="color:#1b3e6c;font-size:140%">■</span>&nbsp;<a href="http://programmers.stackexchange.com/">programmers</a>&nbsp; 
+                        <span style="color:#293a5d;font-size:140%">■</span>&nbsp;<a href="http://unix.stackexchange.com/">unix</a>&nbsp;
+                        <span style="color:#bec0cb;font-size:140%">■</span>&nbsp;<a href="http://apple.stackexchange.com/">apple</a>&nbsp;
+                        <span style="color:#939185;font-size:140%">■</span>&nbsp;<a href="http://wordpress.stackexchange.com/">wordpress</a>&nbsp;
+                        <span style="color:#ebf5f5;font-size:140%">■</span>&nbsp;<a href="http://physics.stackexchange.com/">physics</a>&nbsp;
+                        <span style="color:#4176ab;font-size:140%">■</span>&nbsp;<a href="http://diy.stackexchange.com/">home&nbsp;improvement</a>&nbsp;
+                        <span style="color:#d1d8d7;font-size:140%">■</span>&nbsp;<a href="http://gis.stackexchange.com/">gis</a>&nbsp;
+                        <span style="color:#e5e2d3;font-size:140%">■</span>&nbsp;<a href="http://electronics.stackexchange.com/">electronics</a>&nbsp;
+                        <span style="color:#a4c639;font-size:140%">■</span>&nbsp;<a href="http://android.stackexchange.com/">android</a>&nbsp;
+                        <span style="color:#2e4e60;font-size:140%">■</span>&nbsp;<a href="http://security.stackexchange.com/">security</a>&nbsp;
+                        <span style="color:#45bcb5;font-size:140%">■</span>&nbsp;<a href="http://bicycles.stackexchange.com/">bicycles</a>&nbsp;
+                        <span style="color:#00adee;font-size:140%">■</span>&nbsp;<a href="http://dba.stackexchange.com/">dba</a>&nbsp;
+                        <span style="color:#2edaf0;font-size:140%">■</span>&nbsp;<a href="http://drupal.stackexchange.com/">drupal</a>&nbsp;
+                        <span style="color:#213951;font-size:140%">■</span>&nbsp;<a href="http://sharepoint.stackexchange.com/">sharepoint</a>&nbsp;
+                        <span style="color:#73abb3;font-size:140%">■</span>&nbsp;<a href="http://scifi.stackexchange.com/">scifi &amp; fantasy</a>&nbsp;
+                        <span style="color:#23629F;font-size:140%">■</span>&nbsp;<a href="http://ux.stackexchange.com/">user experience</a>&nbsp;
+                        <span style="color:#faff72;font-size:140%">■</span>&nbsp;<a href="http://skeptics.stackexchange.com/">skeptics</a>&nbsp;
+                        <span style="color:#623121;font-size:140%">■</span>&nbsp;<a href="http://rpg.stackexchange.com/">rpg</a>&nbsp;
+                        <span style="color:#e4be88;font-size:140%">■</span>&nbsp;<a href="http://judaism.stackexchange.com/">judaism</a>&nbsp;
+                        <span style="color:#ffecb1;font-size:140%">■</span>&nbsp;<a href="http://mathematica.stackexchange.com/">mathematica</a>&nbsp;
+                </div>
+            </div>
+            <div id="footer-flair">
+                <a class="peer1" href="http://www.peer1.com/stackoverflow"></a>  
+	            <a href="http://creativecommons.org/licenses/by-sa/3.0/" class="cc-wiki-link"></a>
+                <div id="svnrev">rev 2012.7.20.3437</div>
+            </div>
+            <div id="copyright">
+                site design / logo © 2012 stack exchange inc; 
+                user contributions licensed under <a href="http://creativecommons.org/licenses/by-sa/3.0/" rel="license">cc-wiki</a> with <a href="http://blog.stackoverflow.com/2009/06/attribution-required/" rel="license">attribution required</a>
+            </div>
+            
+
+        </div>
+    </div>
+    
+    <noscript>
+        &lt;div id="noscript-warning"&gt;Stack Overflow works best with JavaScript enabled&lt;img src="http://pixel.quantserve.com/pixel/p-c1rF4kxgLUzNc.gif" alt="" class="dno"&gt;&lt;/div&gt;
+    </noscript>
+    <script type="text/javascript">var _gaq=_gaq||[];_gaq.push(['_setAccount','UA-5620270-1']);
+        _gaq.push(['_setCustomVar', 2, 'accountid', '1181163',2]); 
+_gaq.push(['_trackPageview']);
+    var _qevents = _qevents || [];
+    (function(){
+        var s=document.getElementsByTagName('script')[0];
+        var ga=document.createElement('script');
+        ga.type='text/javascript';
+        ga.async=true;
+        ga.src='http://www.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(ga,s);
+        var sc=document.createElement('script');
+        sc.type='text/javascript';
+        sc.async=true;
+        sc.src='http://edge.quantserve.com/quant.js'; 
+        s.parentNode.insertBefore(sc,s);
+    })();
+    </script>
+    <script type="text/javascript">
+        _qevents.push({ qacct: "p-c1rF4kxgLUzNc" });
+    </script>    
+    
+    
+    
+
+</body></html>

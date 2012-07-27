@@ -1,0 +1,61 @@
+h1 {
+	text-rendering: optimizelegibility;
+	font-weight: bold;
+	margin: 0;
+	font-family: inherit;
+	font-size: 18px;
+	line-height: 27px;
+}
+
+p {
+	margin: 0 0 9px;
+	display: block;
+	-webkit-margin-before: 1em;
+	-webkit-margin-after: 1em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+}
+
+header {
+	background-color: #b40800;
+	padding:10px 10px 0 10px;
+	position: fixed;
+	overflow:auto;
+	top:0px;
+    left: 0px;
+    right:0px;
+    height:100px;
+}
+
+header h1 {
+	color: #ffffff;
+}
+
+header p {
+	color: #ffb7b4;
+}
+
+article {
+	position: fixed;
+	overflow:auto;
+	padding:0 10px 35px 10px;
+	padding-bottom:35px;
+	overflow:auto;
+	top:110px;
+	bottom: 35px;
+    left: 0px;
+    right:0px;
+}
+
+.modal-footer {
+    -moz-transition: left 400ms ease-in 0s;
+    border-top: 1px solid #E5E5E5;
+    bottom: 0;
+    height: 35px;
+    left: 0px;
+    margin-top: 45px;
+    padding: 15px 10px;
+    position: fixed;
+    right: 0;
+    z-index: 1021;
+}
