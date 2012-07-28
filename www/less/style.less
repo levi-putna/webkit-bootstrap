@@ -1,0 +1,151 @@
+body {
+	background-color: #F6F4F2;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	margin:0px;
+}
+
+header {
+	background-color: #515151;
+	background:#515151 -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.2, #515151),
+    color-stop(0.8, #302F2D)
+  	);
+	border-top: 1px solid #919192;
+	height: 32px;
+	left: 0px;
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	z-index: 1;
+}
+
+header h1 ,header h1 a {
+	color: #F6F4F2;
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 32px;
+	margin: 0px;
+	text-align: center;
+	text-shadow: 0px -1px 1px #222222;
+}
+
+header h1 {
+	text-align: left;
+	margin-left: 20px;
+}
+
+/* ------ Side Bar ------ */
+nav {
+	background-color: #ECEAE7;
+	border-right: 1px solid #FFFFFF;
+	bottom: 0px;
+	left: 0px;
+	top: 66px;
+	overflow: auto;
+	padding: 20px 40px 0px 0px;
+	position: fixed;
+	text-align: right;
+	width: 180px;
+	z-index: 1;
+}
+
+nav header {
+	background-color: #CBCBCB;
+	background:-webkit-gradient(linear,
+	    left top,
+	    left bottom,
+	    color-stop(0.0, #F9F9F9),
+	    color-stop(1.0, #CBCBCB)
+	  );
+	border-bottom: 1px solid #919395;
+	height: 32px;
+	left: 0px;
+	position: fixed;
+	top: 32px;
+	width: 220px;
+	z-index: 1;
+}
+
+nav h1 {
+    color: #000000;
+    font-size: 18px;
+    font-weight: normal;
+    margin: 0px 0;
+    padding: 0;
+    text-shadow: 0 1px 0 #FFFFFF;
+}
+
+nav ul,nav li {
+	margin: 0;
+	padding: 0;
+}
+
+nav li,nav li a {
+	color: #767573;
+	font-size: 14px;
+	list-style: none outside none;
+	margin: 15px 0;
+	text-shadow: 0 1px 1px #FFFFFF;
+}
+
+nav li a {
+	-moz-transition: color 0.15s ease-out 0s;
+	text-decoration: none;
+}
+
+nav li a:hover {
+  color:#242220;
+  -webkit-transition:color .15s ease-in;
+  -moz-transition:color .15s ease-in;
+  -o-transition:color .15s ease-in;
+}
+
+/* ----- Article ------ */
+article {
+	position: fixed;
+	left: 220px;
+	right: 0px;
+	top: 32px;
+	z-index: 1;
+	padding: 35px 10px 0 10px;
+}
+
+article header {
+	background-color: #CBCBCB;
+	
+	background:-webkit-gradient(linear,
+	    left top,
+	    left bottom,
+	    color-stop(0.0, #F9F9F9),
+	    color-stop(1.0, #CBCBCB)
+	  );
+	border-bottom: 1px solid #919395;
+	position: fixed;
+	top: 32px;
+	height: 32px;
+	left: 220px;
+	right: 0px;
+	z-index: 1;
+}
+
+article h1 {
+	border-left:1px #d3d3d3 solid;
+    color: #000000;
+    font-size: 18px;
+    font-weight: normal;
+    margin: 0px 0;
+    padding: 0 0 0 10px;
+    text-shadow: 0 1px 0 #FFFFFF;
+}
+
+article section {
+	
+}
+
+article .details {
+	font-size: 18px;
+}

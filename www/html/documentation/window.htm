@@ -32,7 +32,7 @@
 				<a href="documentation/window.htm">Window</a>
 			</li>
 			<li>
-				<a href="documentation/welcome.htm">Window</a>
+				<a href="#">Window</a>
 			</li>
 
 		</ul>
@@ -40,7 +40,7 @@
 
 	<article>
 		<header>
-			<h1>API Reference</h1>
+			<h1>Window</h1>
 		</header>
 		<p class="details">
 			Instances of this class represent the "windows" which the desktop or
@@ -51,6 +51,17 @@
 			Instances that do have a parent are described as <em>secondary</em>
 			or <em>dialog</em> shells.
 		</p>
+
+		<h2>Example</h2>
+		<pre class="prettyprint linenums">
+display = Display.getDefault();
+applicationWindow = new HTMLWindow(display);
+applicationWindow.setText(&quot;HTML Test Application&quot;);
+applicationWindow.setMinimumSize(700, 550);
+applicationWindow.setSize(1024, 750);
+applicationWindow.open();
+applicationWindow.setFile("www/html/main.htm");
+	</pre>
 	</article>
 
 </body>
